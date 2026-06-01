@@ -1,11 +1,11 @@
 class Dispositivo:
     def __init__(self,marca,precio):
         self.marca=marca
-        self.precio=precio 
+        self.__precio=precio 
     def encender(self):
         print(f"El dispositivo {self.marca} se encendio correctamente ")
     def mostrar_precio(self):
-        print(f"El precio de tu dispositivo es de {self.precio}")
+        print(f"El precio de tu dispositivo es de {self.__precio}")
 class celular (Dispositivo):
     def __init__(self, marca, precio,operador):
         super().__init__(marca, precio)
